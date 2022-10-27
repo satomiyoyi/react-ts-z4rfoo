@@ -5,7 +5,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.tsx',
+    entry: './index.tsx',
     output: {
         filename: '[name].js',
         path: path.resolve('.', 'dist'),
@@ -114,7 +114,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './public/index.html',
+            template: './index.html',
             collapseInlineTagWhitespace: true,
             collapseWhitespace: true,
             preserveLinebreaks: true,
